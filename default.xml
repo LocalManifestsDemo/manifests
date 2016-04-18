@@ -7,6 +7,6 @@
            remote="origin"
            sync-j="4" />
 
-  <project path="project/A" name="LocalManifestsDemo/project-A" />
-  <project path="project/B" name="LocalManifestsDemo/project-B" />
+  <project path="A" name="LocalManifestsDemo/project-A" />
+  <project path="B" name="LocalManifestsDemo/project-B" />
 </manifest>
