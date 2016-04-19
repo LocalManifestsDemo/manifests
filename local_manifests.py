@@ -67,7 +67,7 @@ def _adjust_url(top, url):
         print "Can not find git command."
         return None
 
-    # Phase 3: Match out current project name with regex
+    # Phase 3: Match out current url with regex
     url_regex = re.compile("\nremote.*url\s*=\s*(?P<url>.*)\n")
     url_match = url_regex.search(out)
 
