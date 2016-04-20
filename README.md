@@ -40,3 +40,25 @@ merged manifest.xml
       <project path="project/C" name="LocalManifestsDemo/project-C" />
     </manifest>
 
+How To Use Local Manifests
+===============
+
+    $ repo init -u https://github.com/LocalManifestsDemo/manifests.git
+    $ repo sync
+
+You will see the local directory as:
+
+    LocalManifestsDemo
+    ├── A (master)
+    └── B (master)
+
+After you run the following commands:
+
+	$ ./.repo/manifests/local_manifests.py
+    $ repo sync
+
+The local directory will be changed:
+
+    LocalManifestsDemo
+    ├── B (stable)
+    └── C (master)
