@@ -76,7 +76,9 @@ def _adjust_url(top, url):
         return None
 
     # Phase 4: Retrieve the remote url
-    return url_match.group("url")
+    url = url_match.group("url")
+    url = url.replace("manifests.git", "local_manifests.git")
+    return url
 
 
 def generate(url=None, branch=None):
